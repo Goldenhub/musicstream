@@ -28,6 +28,14 @@ html {
   aside {
     width: 50%;
   }
+  footer svg:not(.volume) {
+    font-size: 10rem;
+  }
+  section.visualizer img {
+    top: calc(100% - 10rem);
+    width: 30rem;
+    height: 20rem;
+  }
 }
 
 @media only screen and (max-width:400px) {
@@ -37,7 +45,14 @@ html {
   aside {
     width: 50%;
   }
-  
+  footer svg:not(.volume) {
+    font-size: 10rem;
+  }
+  section.visualizer img {
+    top: calc(100% - 10rem);
+    width: 30rem;
+    height: 20rem;
+  }
 }
 @media only screen and (max-width:250px) {
   html {
@@ -46,7 +61,14 @@ html {
   aside {
     width: 50%;
   }
-  
+  footer svg:not(.volume) {
+    font-size: 10rem;
+  }
+  section.visualizer img {
+    top: calc(100% - 10rem);
+    width: 30rem;
+    height: 20rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
