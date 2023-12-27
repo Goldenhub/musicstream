@@ -28,10 +28,6 @@ html {
   aside {
     width: 50%;
   }
-  
-  .App {
-    grid-template-rows: auto 1fr;
-  }
 }
 
 @media only screen and (max-width:400px) {
@@ -42,9 +38,6 @@ html {
     width: 50%;
   }
   
-  .App {
-    grid-template-rows: auto 1fr;
-  }
 }
 @media only screen and (max-width:250px) {
   html {
@@ -54,9 +47,6 @@ html {
     width: 50%;
   }
   
-  .App {
-    grid-template-rows: auto 1fr;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
