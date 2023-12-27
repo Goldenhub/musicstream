@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
         <header className={Theme === true ? 'header-light' : 'header-dark'}>
-            <h1>Musiq</h1>
+            <h1>musiqstream</h1>
             <div>
                 <MdHistory onClick={handleOffCanvasToggle} title="history" role="button" aria-label="History" />
                 <MdOutlineDarkMode onClick={handleClick} data-active={Theme} title="dark mode" role="button" aria-label="dark mode" />

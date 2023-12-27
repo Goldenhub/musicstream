@@ -54,7 +54,7 @@ export default function Visualizer({ children }) {
                 barHeight = dataArray[i];
 
                 ctx.fillStyle = `rgb(${barHeight + 100}, 128, 128)`;
-                ctx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight);
+                ctx.fillRect(x, canvas.height - barHeight / 3, barWidth, barHeight);
 
                 x += barWidth + 1;
             }
