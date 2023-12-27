@@ -90,12 +90,12 @@ function App() {
               {hasInteracted && <Visualizer>
                 <TrackCover />
               </Visualizer>}
+              <div className={Theme === true ? 'footerContainer footerContainer-light' : 'footerContainer footerContainer-dark'}>
+                <TrackInfo />
+                <ProgressBar />
+                <Footer />
+              </div>
             </main>
-            <div className='footerContainer'>
-              <TrackInfo />
-              <ProgressBar />
-              <Footer />
-            </div>
           </>
         }
       </div>

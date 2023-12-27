@@ -28,12 +28,9 @@ html {
   aside {
     width: 50%;
   }
-  canvas {
-    width: fit-content;
-    height: fit-content;
-  }
+  
   .App {
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: auto 1fr;
   }
 }
 
@@ -44,12 +41,9 @@ html {
   aside {
     width: 50%;
   }
-  canvas {
-    width: fit-content;
-    height: fit-content;
-  }
+  
   .App {
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: auto 1fr;
   }
 }
 @media only screen and (max-width:250px) {
@@ -59,12 +53,9 @@ html {
   aside {
     width: 50%;
   }
-  canvas {
-    width: fit-content;
-    height: fit-content;
-  }
+  
   .App {
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: auto 1fr;
   }
 }
 
@@ -72,6 +63,10 @@ html {
   .App-dark{
     background-color: #242424;
     color: #ffffff;
+  }
+
+  .footerContainer-dark {
+    background-color: #242424;
   }
 
   body {

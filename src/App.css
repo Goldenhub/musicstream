@@ -1,15 +1,7 @@
 .App {
-  padding: 50px;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4fr;
-  align-items: flex-start;
-}
-
-canvas {
+  padding: 50px;
   height: fit-content;
-  width: fit-content;
 }
 
 header {
@@ -18,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 header svg {
@@ -73,11 +65,16 @@ aside li p {
   color: #ffffff;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-between;
+}
+
 section.visualizer {
-  max-width: 60rem;
-  max-height: 20rem;
   width: 100%;
-  height: 30rem;
+  height: 50%;
   margin: auto;
   position: relative;
   margin-bottom: 10rem;
@@ -87,11 +84,13 @@ section.visualizer {
 
 section.visualizer>canvas {
   transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
 }
 
 section.visualizer img {
   position: absolute;
-  top: 12.5rem;
+  top: calc(100% - 7.5rem);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 1rem;
@@ -182,11 +181,10 @@ footer>[data-active=true] {
 }
 
 .footerContainer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  /* position: absolute; */
+  /* bottom: 0;
+  left: 0; */
   width: 100%;
-  padding: 2rem;
   margin: auto;
   background: white;
 }
@@ -221,9 +219,17 @@ input[type=range] {
   background-color: #ffffff;
 }
 
+.footerContainer-light {
+  background-color: #ffffff;
+}
+
 
 /* dark */
 .App-dark {
   background-color: #242424;
   color: #ffffff;
+}
+
+.footerContainer-dark {
+  background-color: #242424;
 }

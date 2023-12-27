@@ -44,7 +44,7 @@ export default function Visualizer({ children }) {
 
             analyser.current.getByteFrequencyData(dataArray);
 
-            ctx.fillStyle = "rgb(0, 128, 128)";
+            ctx.fillStyle = "rgb(0, 0, 0)";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             const barWidth = (canvas.width / bufferLength) * 2.5;
             let barHeight;
